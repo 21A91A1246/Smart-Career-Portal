@@ -1,0 +1,142 @@
+
+.dashboard-container {
+  background: #f4f7fc;
+  min-height: calc(100vh - 70px);
+}
+
+.dashboard-content {
+  width: calc(100% - 220px);
+  margin-left: 220px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+/* HERO SECTION */
+.dashboard-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.dashboard-hero h1 {
+  margin: 0;
+}
+
+.dashboard-hero p {
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+.hero-card img {
+  width: 160px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* STATS */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+}
+
+/* INFO SECTION */
+.info-section {
+  margin-top: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.info-section h2 {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+/* ANIMATIONS */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* @media (max-width: 1024px) {
+  .dashboard-content {
+    padding: 25px;
+  }
+
+  .dashboard-hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .hero-card img {
+    width: 140px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+} */
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-hero h1 {
+    font-size: 20px;
+  }
+
+  .dashboard-hero p {
+    font-size: 13px;
+  }
+
+  .hero-card img {
+    width: 120px;
+  }
+}

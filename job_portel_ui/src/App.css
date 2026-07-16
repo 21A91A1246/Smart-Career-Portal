@@ -1,0 +1,40 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f4f6fb;
+  color: #111827;
+}
+
+/* MAIN APP LAYOUT */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* PAGE CONTENT AREA */
+.page-content {
+  flex: 1;
+  padding-top: 70px; /* navbar height */
+  padding-bottom: 60px; /* footer spacing */
+}
+
+/* ensure links look clean globally */
+a {
+  text-decoration: none;
+}
+
+/* smooth UI feel */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}

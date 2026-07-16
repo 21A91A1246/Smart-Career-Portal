@@ -1,0 +1,47 @@
+.sidebar {
+  width: 220px;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  left: 0;
+  background: #f8fafc; /* Crisp, ultra-light slate gray background */
+  color: #1e293b; /* Deep slate for primary text */
+  padding: 25px 15px;
+  overflow-y: auto;
+  z-index: 100;
+  box-sizing: border-box;
+  border-right: 1px solid #e2e8f0; /* Soft separator from the main content */
+}
+
+.sidebar-header {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: #1e3a8a; /* Deep elegant blue for logo/header */
+  font-size: 1.3rem;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-links a {
+  color: #64748b; /* Professional muted gray for links */
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.sidebar-links a:hover {
+  background: #e0f2fe; /* Soft light blue background on hover */
+  color: #0369a1; /* Vibrant dark blue text for strong contrast */
+}
+

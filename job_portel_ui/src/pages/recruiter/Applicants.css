@@ -1,0 +1,213 @@
+.applicants-layout {
+  background: #f4f7fc;
+  min-height: calc(100vh - 70px);
+}
+
+.applicants-container {
+  margin-left: 220px;
+  padding: 35px;
+}
+
+/* Banner */
+
+.applicants-banner {
+  background: linear-gradient(135deg,#2563eb,#1d4ed8);
+  color: white;
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 30px rgba(37,99,235,0.2);
+}
+
+.applicants-banner h2 {
+  margin: 0 0 8px;
+}
+
+.applicants-banner p {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Header */
+
+.applicants-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.applicants-header h1 {
+  margin: 0;
+  color: #1e293b;
+}
+
+.applicants-header span {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Empty State */
+
+.empty-applicants {
+  background: white;
+  padding: 50px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(
+    0,
+    0,
+    0,
+    0.08
+  );
+}
+
+/* Applicant Card */
+
+.applicant-card {
+  background: white;
+  padding: 15px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.applicant-card:hover {
+  transform: translateY(-4px);
+}
+
+.applicant-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.applicant-top h2 {
+  margin: 0;
+  color: #2563eb;
+}
+
+.email {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+.status-chip {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.applicant-info {
+  margin-top: 15px;
+}
+
+.summary-box,
+.skills-box,
+.cover-letter {
+  margin-top: 10px;
+  padding: 5px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.resume-section {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.resume-btn {
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.resume-btn:hover {
+  background: #1d4ed8;
+}
+
+.section-divider {
+  margin: 25px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.experience-card {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.experience-card h4 {
+  margin: 0;
+  color: #1e293b;
+}
+
+.experience-card p {
+  margin: 6px 0;
+}
+
+.experience-card span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .applicants-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .applicants-header,
+  .applicant-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .applicants-container {
+    padding: 15px;
+  }
+
+  .applicant-card {
+    padding: 18px;
+  }
+
+  .skills-list {
+    gap: 6px;
+  }
+}
